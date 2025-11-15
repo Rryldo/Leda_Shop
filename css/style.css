@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    background-color: rgb(19,19,17);
+}
+
+.fixed-homeline{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+}
+
+.HomeLine{
+    display: flex;
+    align-items: center;
+    background-color: rgb(19,19,17);
+}
+
+.logodiv{
+    margin-left:100px;
+}
+
+.homePageLink {
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 200px;
+    border-radius: 25px;
+    display: block;
+    cursor:pointer;
+}
+
+.logo:hover,
+.menu-icon:hover{
+    opacity: 0.7;
+}
+
+.cartbutton:hover{
+    opacity: 0.7;
+}
+
+.menu-icon {
+    font-size: 50px;
+    color: rgb(204,180,126);
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+        
+.spacer{
+    flex: 1;
+}
+
+.homerowbuttons{
+    display: flex;
+    margin-right: 75px;
+    align-items: center;
+}
+
+.homerowbuttons button{
+    width: auto;
+    min-width: 70px;
+    padding: 0 15px;
+    background-color:transparent;
+    border:none;
+    transition:none;
+    outline:none;
+    cursor:pointer;
+    border-radius:20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight:400;
+    color: rgb(204,180,126);
+}
+
+.homepagephotodiv{
+    position:fixed;
+    top:50px;
+    left:50%;
+    z-index: -2;
+    font-size: 5vw;
+}
+
+.homepagephoto{
+    width:85vw;
+    height:auto;
+}
+
+.homepagedesc{
+    position: absolute;
+    bottom: 20%;
+    left: 10px;
+    margin: 0 0;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700px;
+    color: rgb(204, 180, 126);
+    background-color: rgb(19,19,17, 0.7);
+    font-size: 1em;
+}
+
+.homepagephotosizediv{
+    height: auto;
+    padding-top:45%;
+}
+
+.content-set{
+    background-color: rgb(19,19,17);
+}
+
+.row1-set,
+.row1-standalone,
+.row2-standalone,
+.row3-standalone,
+.row4-standalone
+{
+    display: flex;
+    gap: 20px;
+}
+
+.entity {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    flex: 1;
+    cursor: pointer;
+    align-items:center;
+}
+
+.entity img {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    width: 75%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.entity p {
+    text-align:center;
+}
+
+.item_name{
+    font-family: 'Momo Trust Display', sans-serif;
+    font-size: 2vw;
+    margin-bottom:0;
+    color: rgb(204, 180, 126);
+}
+
+.item_price{
+    font-family: 'Momo Signature', cursive;
+    font-size: 1vw;
+    color: rgb(204,180,126);
+}
+
+.items-set-top{
+    box-shadow: 
+        0 -10px 20px rgba(144,148,149,0.6),
+        -10px 0 20px rgba(144,148,149,0.6),
+        10px 0 20px rgba(144,148,149,0.6);
+}
+
+.items-set-bot{
+    box-shadow: 
+        0 10px 20px rgba(144,148,149,0.6),
+        -10px 0 20px rgba(144,148,149,0.6),
+        10px 0 20px rgba(144,148,149,0.6);
+}
+
+.items-standalone{
+    box-shadow:
+        0 -10px 20px rgba(144,148,149,0.6),
+        0 10px 20px rgba(144,148,149,0.6),
+        -10px 0 20px rgba(144,148,149,0.6),
+        10px 0 20px rgba(144,148,149,0.6);
+}
+
+.socialtitle{
+    font-family: 'Momo Signature', cursive;
+    font-size: 3vw;
+    text-align:center;
+    color:rgb(204, 180, 126);
+}
+
+.socialcontainer{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    font-family: 'Momo Signature', cursive;
+    font-size: 2vw;
+    margin-bottom:2vw;
+}
+
+.socialcontainer a{
+    color: rgb(204, 180, 126);
+}
