@@ -2,11 +2,13 @@
 <html>
 <head>
     <title>Leda Shop - HomePage</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Momo+Trust+Display&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
     <script src="js/home.js" defer></script>
 
     <meta charset="UTF-8">
@@ -17,25 +19,32 @@
 
     <div class="fixed-homeline">
         <div class="HomeLine">
-            <div class="menudiv">
-               <span class="material-symbols-outlined menu-icon">menu</span>
-            </div>
-
             <div class="logodiv">
                 <a href="HomePage.html" class="homePageLink">
                     <img src="images/Logo_LedaShop.PNG" class="logo">
                 </a>
             </div>
-                <div class="spacer"></div>
+            <div class="categories">
+                <a href="search.html?gender=M"> Male </a>
+                <a href="search.html?gender=F"> Female </a>
+                <a href="search.html?outlet=yes"> Outlet </a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search products" class="search-box">
+                <a class = "search-button">
+                    <span class="material-symbols-outlined search-button">search</span>
+                </a>
+            </div>
             <div class="homerowbuttons">
-                <button class="cartbutton">Cart</button>
+                <a href="cart.html" class="cartbutton">Cart</a>
             </div>
         </div>
     </div>
 
-    <div class="homepagephotodiv">
-        <img id="slide-1" src ="images/Homepagephoto1.jpg" class = "homepagephoto">
+    <div class="container">
+        <img id="slide-1" src ="images/Homepagephoto2.jpg" class = "homepagephoto">   
         <p class="homepagedesc"> Product Name </p>
+
     </div>
     <div class="homepagephotosizediv"></div> 
 
@@ -52,14 +61,16 @@
                 </div>
             </div>
             <div class="entity">
+                <a href="item.html">
                 <div>
-                    <img src = "images/item1_set2.JPG" class = "items-set-top">
-                    <img src = "images/item2_set2.JPG" class = "items-set-bot">
-                </div>
-                <div>
-                    <p class="item_name"> Name SET 2 </p>
-                    <p class="item_price"> 299,99 € </p>
-                </div>
+                        <img src = "images/item1_set2.JPG" class = "items-set-top">
+                        <img src = "images/item2_set2.JPG" class = "items-set-bot">
+                    </div>
+                    <div>
+                        <p class="item_name"> Name SET 2 </p>
+                        <p class="item_price"> 299,99 € </p>
+                    </div>
+                </a>
             </div>
             <div class="entity">
                 <div>

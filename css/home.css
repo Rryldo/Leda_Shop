@@ -3,6 +3,10 @@ body{
     background-color: rgb(19,19,17);
 }
 
+a {
+    text-decoration:none;
+}
+
 .fixed-homeline{
     position:fixed;
     top:0;
@@ -14,11 +18,10 @@ body{
 .HomeLine{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width:100%;
+    padding: 0 60px;
     background-color: rgb(19,19,17);
-}
-
-.logodiv{
-    margin-left:100px;
 }
 
 .homePageLink {
@@ -34,21 +37,16 @@ body{
     cursor:pointer;
 }
 
-.logo:hover,
-.menu-icon:hover{
+.logodiv{
+    flex: 0 0 250px;
+}
+
+.logo:hover{
     opacity: 0.7;
 }
 
 .cartbutton:hover{
     opacity: 0.7;
-}
-
-.menu-icon {
-    font-size: 50px;
-    color: rgb(204,180,126);
-    cursor: pointer;
-    margin-left: 15px;
-    margin-right: 15px;
 }
         
 .spacer{
@@ -56,12 +54,70 @@ body{
 }
 
 .homerowbuttons{
+    flex: 0 0 250px;
     display: flex;
-    margin-right: 75px;
     align-items: center;
 }
 
-.homerowbuttons button{
+.categories{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 40px;
+    flex: 1;
+}
+
+.categories a:hover{
+    opacity:0.7;
+}
+
+.search-container{
+    display:flex;
+    align-items:center;
+    flex: 1;
+    padding-left: 10vw;
+    gap: 10px;
+
+}
+
+.search-box{
+    height:50px;
+    font-size: 1.5em;
+    background-color:transparent;
+    border:none;
+    transition: none;
+    outline: none;
+    font-family:'Dancing Script', cursive;
+    color:rgb(204, 180, 126);
+}
+.search-box:focus {
+    outline:none;
+}
+
+.search-box::placeholder{
+    color: rgb(204, 180, 126);
+    opacity: 0.8;
+}
+
+.search-button{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5em;
+    color:rgb(204, 180, 126);
+    border-radius:none;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.search-button:hover{
+    opacity:0.7;
+}
+
+.homerowbuttons a{
+    font-size: 50px;
     width: auto;
     min-width: 70px;
     padding: 0 15px;
@@ -73,20 +129,35 @@ body{
     border-radius:20px;
     font-family: 'Dancing Script', cursive;
     font-weight:400;
-    color: rgb(204,180,126);
+    color: rgb(204, 180, 126);
 }
 
-.homepagephotodiv{
+.categories a {
+    font-size: 50px;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+    color: rgb(204, 180, 126);
+    font-family: 'Dancing Script', cursive;
+    background-color:transparent;
+    border: none;
+    transition: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.container{
     position:fixed;
     top:50px;
     left:50%;
-    z-index: -2;
     font-size: 5vw;
+    z-index:0;
 }
 
 .homepagephoto{
     width:85vw;
     height:auto;
+    z-index:0;
 }
 
 .homepagedesc{
@@ -94,11 +165,13 @@ body{
     bottom: 20%;
     left: 10px;
     margin: 0 0;
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700px;
+    font-family: "Roboto mono", sans-serif;
+    font-weight: bold;
     color: rgb(204, 180, 126);
-    background-color: rgb(19,19,17, 0.7);
-    font-size: 1em;
+    background-color: rgba(19,19,17, 0.7);
+    font-size: 0.8em;
+    cursor:pointer;
+    z-index:1;
 }
 
 .homepagephotosizediv{
@@ -107,7 +180,9 @@ body{
 }
 
 .content-set{
+    position:relative;
     background-color: rgb(19,19,17);
+    z-index:1;
 }
 
 .row1-set,
@@ -119,6 +194,8 @@ body{
     display: flex;
     gap: 20px;
 }
+
+
 
 .entity {
     margin-top: 2vw;
@@ -155,24 +232,24 @@ body{
 
 .items-set-top{
     box-shadow: 
-        0 -10px 20px rgba(144,148,149,0.6),
-        -10px 0 20px rgba(144,148,149,0.6),
-        10px 0 20px rgba(144,148,149,0.6);
+        0 -10px 20px rgba(8,7,6, 0.8),
+        -10px 0 20px rgba(8,7,6, 0.8),
+        10px 0 20px rgba(8,7,6, 0.8);
 }
 
 .items-set-bot{
     box-shadow: 
-        0 10px 20px rgba(144,148,149,0.6),
-        -10px 0 20px rgba(144,148,149,0.6),
-        10px 0 20px rgba(144,148,149,0.6);
+        0 10px 20px rgba(8,7,6, 0.8),
+        -10px 0 20px rgba(8,7,6, 0.8),
+        10px 0 20px rgba(8,7,6, 0.8);
 }
 
 .items-standalone{
     box-shadow:
-        0 -10px 20px rgba(144,148,149,0.6),
-        0 10px 20px rgba(144,148,149,0.6),
-        -10px 0 20px rgba(144,148,149,0.6),
-        10px 0 20px rgba(144,148,149,0.6);
+        0 -10px 20px rgba(8,7,6, 0.8),
+        0 10px 20px rgba(8,7,6, 0.8),
+        -10px 0 20px rgba(8,7,6, 0.8),
+        10px 0 20px rgba(8,7,6, 0.8);
 }
 
 .socialtitle{
@@ -192,5 +269,7 @@ body{
 }
 
 .socialcontainer a{
+    flex: 0;
     color: rgb(204, 180, 126);
+    text-decoration:none;
 }
