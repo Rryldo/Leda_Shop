@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Your cart </title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+        <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Momo+Trust+Display&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/cart.css">
+        <script src="js/cart.js" defer></script>
+    </head>
+
+    <body>
+
+        <div class="HomeLine">
+            <div class="logodiv">
+                <a href="HomePage.html" class="homePageLink">
+                    <img src="images/Logo_LedaShop.PNG" class="logo">
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search products" class="search-box">
+                <a class = "search-button">
+                    <span class="material-symbols-outlined search-button">search</span>
+                </a>
+            </div>
+            <div class="homerowbuttons">
+                <a href = "cart.html" class="cartbutton">Cart</a>
+            </div>
+        </div>
+
+        <div class = "item-place">
+            <div class="cart-side">
+                <div class = "item-row">
+                    <img src="images/item1_set2.JPG" class="item-cart">
+                    <p class="item-name">Item 1 - Set 2 </p>
+                    <p class="item-price">299.99 €</p>
+                    <span class="material-symbols-outlined x-button">close</span>
+                </div>
+                <div class="total-price">
+                    <p class="item-price-name"> Total Price: </p>
+                    <p class="item-price-number"> 299.99 €</p>
+                </div>
+            </div>
+            <div class = "payment-form">
+                <div class="rowPersonal">
+                    <p class="personalInformation"> Personal Information: </p>
+                    <div class="personalName-wrapper">
+                        <input id="firstName" placeholder="First Name" autocomplete="off" required>
+                        <input id="lastName" placeholder="Last Name" autocomplete="off" required>
+                    </div>
+                    <input id="email" placeholder="Email" autocomplete="off"  required>
+                    <input id="phoneNumber" placeholder="Phone Number (NOT REQUIRED)" autocomplete="off">
+                </div>
+                <div class="rowBilling">
+                    <p class="billingAddress"> Billing Address: </p>
+                    <input id="address1b" placeholder="Address 1" required>
+                    <input id="address2b" placeholder="Address 2 (NOT REQUIRED)" autocomplete="off" >
+                    <input id="city-townb" placeholder="City/Town" autocomplete="off" required>
+                    <input id="countryb" placeholder="Country" autocomplete="off" required>
+                    <input id="stateb" placeholder="State/Province/Region" autocomplete="off" >
+                    <input id="zip-codeb" placeholder="Postal/ZIP Code" autocomplete="off" required>
+
+                </div>
+                <div class="rowShipping">
+                    <p class="shippingAddress"> Shipping Address: </p>
+                    <input id="address1s" placeholder="Address 1" autocomplete="off" required>
+                    <input id="address2s" placeholder="Address 2 (NOT REQUIRED)" autocomplete="off">
+                    <input id="city-towns" placeholder="City/Town" autocomplete="off" required>
+                    <input id="countrys" placeholder="Country" autocomplete="off" required>
+                    <input id="states" placeholder="State/Province/Region" autocomplete="off">
+                    <input id="zip-codes" placeholder="Postal/ZIP Code" autocomplete="off" required>
+                </div>
+                <div class="rowPayment">
+                    <p class="paymentInformation"> Payment Information: </p>
+                    <input id="paymentName" placeholder="Cardholder Name" autocomplete="off" required>
+                    <div class="card-wrapper">
+                        <input id="cardNumber" placeholder="Card Number" autocomplete="off" required>
+                        <span id="cardType"></span>
+                    </div>
+                    <input id="expiry" placeholder="MM/YY" maxlength="5" autocomplete="off" required>
+                    <input id="cvv" placeholder="CVV" maxlength="4" autocomplete="off" required>
+                </div>
+                <button id="buyButton" class="confirm"> Buy </button>
+            </div>
+        </div>
+    </body>
+</html>
