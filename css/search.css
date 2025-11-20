@@ -1,0 +1,231 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+/*  TOP FIXED HEADER */
+.fixed-homeline {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.HomeLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box {
+    padding: 10px 15px;
+    width: 280px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.search-button {
+    background-color: black;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.search-button:hover {
+    background-color: #444;
+}
+
+.cartbutton {
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.cartbutton:hover {
+    background-color: #555;
+}
+
+/*  MAIN LAYOUT */
+.search-and-results {
+    margin-top: 120px;
+    display: flex;
+    padding: 30px 50px;
+    gap: 35px;
+}
+
+/*  LEFT FILTER PANEL */
+.search-div {
+    width: 320px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    height: fit-content;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.search-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.search-container-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box-div {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
+/* Radio groups */
+.radio-gender, .radio-type, .radio-outlet {
+    margin-top: 20px;
+}
+
+.radio-gender label,
+.radio-type label,
+.radio-outlet label {
+    display: block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+/* Price section */
+.price-div {
+    margin-top: 20px;
+}
+
+.price-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.price-min, .price-max {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price-min input,
+.price-max input {
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    width: 120px;
+}
+
+/* Apply button */
+.apply-button {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    padding: 12px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.25s;
+}
+
+.apply-button:hover {
+    background: #444;
+}
+
+/* PRODUCT GRID */
+
+.content-set {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Rows */
+.row1-set, 
+.row1-standalone,
+.row2-standalone,
+.row3-standalone,
+.row4-standalone {
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+}
+
+/* Product item container */
+.entity {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    width: 260px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.25s;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.08);
+}
+
+.entity:hover {
+    transform: scale(1.03);
+}
+
+/* Images */
+.items-set-top,
+.items-set-bot {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.items-standalone {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+/* Product name & price */
+.item_name {
+    font-size: 20px;
+    margin: 8px 0 3px;
+}
+
+.item_price {
+    font-size: 19px;
+    color: #444;
+    font-weight: 600;
+}
