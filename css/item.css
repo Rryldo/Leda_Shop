@@ -165,7 +165,7 @@ body{
 }
 
 .price{
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-top:0;
 }
 
@@ -189,23 +189,28 @@ body{
 
 .description{
     max-width: 40vw;
+    font-family: arial;
+    margin-bottom:5vw;
 }
 
 .add{
-    color:rgb(204, 180, 126);
-    font-size: 2.5vw;
+
+    color: rgb(19,19,17);
+    background-color:rgb(204, 180, 126) !important;
+    font-size: 1.0vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 1.0vw;
+    padding-bottom: 1.0vw;
     width: auto;
     background-color: transparent;
     font-family: 'Momo Trust Display', sans-serif;
-    border-radius:none;
+    border-radius: 30px;
     outline: none;
     cursor:pointer;
     transition:none;
     display: block;
-    margin: 5vw auto;
-    box-shadow:
-        0 -10px 20px rgba(8,7,6, 0.8),
-        0 10px 20px rgba(8,7,6, 0.8),
-        -10px 0 20px rgba(8,7,6, 0.8),
-        10px 0 20px rgba(8,7,6, 0.8);
+    margin: 4vw auto;
+    margin-left: 2vw;
+
 }
